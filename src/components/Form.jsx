@@ -1,7 +1,7 @@
 import GeneralInfo from './GeneralInfo.jsx'
 import Education from './Education.jsx'
 import Experience from './Experience.jsx'
-
+import '../App.css'
 import {useState} from 'react';
 
 function Form(){
@@ -13,8 +13,11 @@ function Form(){
     return(
         <form onSubmit={handleSubmit}>
             <GeneralInfo s={submit}/>
+            <hr />
             <Education s={submit}/>
+            <hr />
             <Experience s={submit}/>
+            <hr />
             <button type="submit" >{submit? "Submit" : "Edit"}</button>
         </form>
     )

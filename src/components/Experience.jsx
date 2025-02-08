@@ -23,11 +23,11 @@ function Experience({s}){
         s ? 
         <section>
             <h2>Experience</h2>
-            {Input({type: "text", id: "CompanyName", onChange: handleCnChange, value : experience.cn})}
-            {Input({type: "text", id: "Level", onChange: handleLevelChange, value : experience.level})}
-            {Input({type: "text", id: "Role", onChange: handleRoleChange, value : experience.role})}
-            {Input({type: "date", id: "StartDate", onChange: handleStartChange, value : experience.start})}
-            {Input({type: "date", id: "EndDate", onChange: handleEndChange, value : experience.end})}
+            {Input({type: "text", id: "CompanyName", onChange: handleCnChange, value : experience.cn, label: "Company Name"})}
+            {Input({type: "text", id: "Level", onChange: handleLevelChange, value : experience.leve, label: "Level"})}
+            {Input({type: "text", id: "Role", onChange: handleRoleChange, value : experience.role, label: "Role"})}
+            {Input({type: "date", id: "StartDate", onChange: handleStartChange, value : experience.start, label: "Start Date"})}
+            {Input({type: "date", id: "EndDate", onChange: handleEndChange, value : experience.end, label: "End Date"})}
         </section>
         :
         <section>

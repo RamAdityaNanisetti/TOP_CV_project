@@ -18,9 +18,9 @@ function Education({s}){
         s ?
         <section>
             <h2>Education</h2>
-            {Input({type: "text", id: "SchoolName", onChange: handleSnChange, value : education.sn})}
-            {Input({type: "text", id: "StudyTitle", onChange: handleTitleChange, value : education.title})}
-            {Input({type: "date", id: "StudyEndDate", onChange: handleDateChange, value : education.date})}
+            {Input({type: "text", id: "SchoolName", onChange: handleSnChange, value : education.sn, label: "School Name"})}
+            {Input({type: "text", id: "StudyTitle", onChange: handleTitleChange, value : education.title, label: "Course Title "})}
+            {Input({type: "date", id: "StudyEndDate", onChange: handleDateChange, value : education.date, label: "End Date"})}
         </section>
         :
 

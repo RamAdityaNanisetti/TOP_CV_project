@@ -19,9 +19,9 @@ const GeneralInfo = ({s})=>{
         s ? 
         <section>
             <h2>General Information</h2>
-            {Input({type: "text", id: "name", onChange: handleNameChange, value: generalInfo.name })}
-            {Input({type: "email", id: "email", onChange: handleEmailChange, value: generalInfo.email })}
-            {Input({type: "text", id: "phone", onChange: handlePhoneChange, value: generalInfo.phone })}
+            {Input({type: "text", id: "name", onChange: handleNameChange, value: generalInfo.name, label: "Name" })}
+            {Input({type: "email", id: "email", onChange: handleEmailChange, value: generalInfo.email, label: "Email" })}
+            {Input({type: "text", id: "phone", onChange: handlePhoneChange, value: generalInfo.phone, label: "Phone Number" })}
         </section>
         :
         <section>
