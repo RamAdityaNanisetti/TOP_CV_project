@@ -36,13 +36,19 @@ input{
   border: none;
   background-color: #A0A9A9;
   text-align: left;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  border: 2px solid #A9A9A9;
 }
-
+input:focus{
+  border: 2px solid black;
+  outline: none;
+}
 label{
   width: 95%;
   height: 25px;
-  background-color: white;
   text-align: left;
+  display: block;
 }
 
 hr{
@@ -55,4 +61,16 @@ hr{
 button{
   margin-top: 20px;
   margin-bottom: 20px;
+  background: linear-gradient(0, #A9A9A9, #879292);
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+button:hover {
+  background: linear-gradient(0, #879292, #A9A9A9);
+}
+
+p{
+  text-align: left;
 }
