@@ -5,7 +5,6 @@ import App from './App.jsx'
 import GeneralInfo from './components/GeneralInfo.jsx'
 import Education from './components/Education.jsx'
 import Experience from './components/Experience.jsx'
-import './App.css'
 import Form from './components/Form.jsx'
 
 

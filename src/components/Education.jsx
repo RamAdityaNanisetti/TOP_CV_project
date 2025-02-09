@@ -26,9 +26,15 @@ function Education({s}){
 
         <section>
             <h2>Education</h2>
-            <p>School Name: {education.sn}</p>
-            <p>Study Title: {education.title}</p>
-            <p>Study End Date: {education.date}</p>
+            <div className="row">
+                <p className="title">School Name</p><p className="text">: {education.sn}</p>
+            </div>
+            <div className="row">
+                <p className="title">Study Title</p><p className="text">: {education.title}</p>
+            </div>
+            <div className="row">
+                <p className="title">Study End Date</p><p className="text">: {education.date}</p>
+            </div>
         </section>
     )
 }

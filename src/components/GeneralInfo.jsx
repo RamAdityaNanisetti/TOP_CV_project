@@ -26,9 +26,15 @@ const GeneralInfo = ({s})=>{
         :
         <section>
             <h2>General Information</h2>
-            <p>Name: {generalInfo.name}</p>
-            <p>Email: {generalInfo.email}</p>
-            <p>Phone Number: {generalInfo.phone}</p>
+            <div className="row">
+                <p className="title">Name</p><p className="text">: {generalInfo.name}</p>
+            </div>
+            <div className="row">
+                <p className="title">Email</p><p className="text">: {generalInfo.email}</p>
+            </div>
+            <div className="row">
+                <p className="title">Phone Number</p><p className="text">: {generalInfo.phone}</p>
+            </div>
         </section>
         
     )

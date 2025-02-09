@@ -24,19 +24,29 @@ function Experience({s}){
         <section>
             <h2>Experience</h2>
             {Input({type: "text", id: "CompanyName", onChange: handleCnChange, value : experience.cn, label: "Company Name"})}
-            {Input({type: "number", id: "Level", onChange: handleLevelChange, value : experience.leve, label: "Level"})}
+            {Input({type: "number", id: "Level", onChange: handleLevelChange, value : experience.level, label: "Level"})}
             {Input({type: "text", id: "Role", onChange: handleRoleChange, value : experience.role, label: "Role"})}
             {Input({type: "date", id: "StartDate", onChange: handleStartChange, value : experience.start, label: "Start Date"})}
-            {Input({type: "date", id: "EndDate", onChange: handleEndChange, value : experience.end, label: "End Date"})}
+            {Input({type: "date", id: "EndDate", onChange: handleEndChange, value : experience.end, label: "End Date (Optional)"})}
         </section>
         :
         <section>
             <h2>Experience</h2>
-            <p>Company Name: {experience.cn}</p>
-            <p>Job Level: {experience.level}</p>
-            <p>Role: {experience.role}</p>
-            <p>Start Date: {experience.start}</p>
-            <p>End Date: {experience.end==="" && Date.now() }</p>
+            <div className="row">
+                <p className="title">Company Name</p><p className="text">: {experience.cn}</p>
+            </div>
+            <div className="row">
+                <p className="title">Job Level</p><p className="text">: {experience.level}</p>
+            </div>
+            <div className="row">
+                <p className="title">Role</p><p className="text">: {experience.role}</p>
+            </div>
+            <div className="row">
+                <p className="title">Start Date</p><p className="text">: {experience.start}</p>
+            </div>
+            <div className="row">
+                <p className="title">End Date</p><p className="text">: {experience.end==="" && "Currently Working"}</p>
+            </div>
         </section>
     )
 }

@@ -14,7 +14,7 @@ form{
   padding-top: 20px;
   background-color: #708090;
   color: #2C2C2C;
-  width: 400px;
+  width: 450px;
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -34,7 +34,7 @@ input{
   height: 25px;
   border-radius: 5px;
   border: none;
-  background-color: #A0A9A9;
+  background-color: #A0A9A9 !important;
   text-align: left;
   margin-bottom: 10px;
   margin-top: -5px;
@@ -71,6 +71,28 @@ button:hover {
   background: linear-gradient(0, #879292, #A9A9A9);
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
 p{
   text-align: left;
+  display: inline;
+}
+
+
+
+p.title{
+  width: 30%;
+}
+p.text{
+  width: 80%;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;  /* Removes yellow autofill */
+  -webkit-box-shadow: 0 0 0 50px #A0A9A9 inset !important; /* Force background */
+  color: black !important;  /* Ensures text stays visible */
 }
