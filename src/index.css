@@ -96,3 +96,9 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 50px #A0A9A9 inset !important; /* Force background */
   color: black !important;  /* Ensures text stays visible */
 }
+
+@media (max-width: 500px) {
+  form {
+      width: 90%;
+  }
+}
